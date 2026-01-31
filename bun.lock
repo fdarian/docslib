@@ -12,7 +12,7 @@
     },
     "apps/cli": {
       "name": "@docslib/cli",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "bin": {
         "docslib": "./bin.mjs",
       },
@@ -29,10 +29,10 @@
         "typescript": "latest",
       },
       "optionalDependencies": {
-        "@docslib/cli-darwin-arm64": "0.1.0",
-        "@docslib/cli-darwin-x64": "0.1.0",
-        "@docslib/cli-linux-arm64": "0.1.0",
-        "@docslib/cli-linux-x64": "0.1.0",
+        "@docslib/cli-darwin-arm64": "0.1.1",
+        "@docslib/cli-darwin-x64": "0.1.1",
+        "@docslib/cli-linux-arm64": "0.1.1",
+        "@docslib/cli-linux-x64": "0.1.1",
       },
     },
     "apps/mcp": {
@@ -144,14 +144,6 @@
     "@changesets/write": ["@changesets/write@0.4.0", "", { "dependencies": { "@changesets/types": "^6.1.0", "fs-extra": "^7.0.1", "human-id": "^4.1.1", "prettier": "^2.7.1" } }, "sha512-CdTLvIOPiCNuH71pyDu3rA+Q0n65cmAbXnwWH84rKGiFumFzkmHNT8KHTMEchcxN+Kl8I54xGUhJ7l3E7X396Q=="],
 
     "@docslib/cli": ["@docslib/cli@workspace:apps/cli"],
-
-    "@docslib/cli-darwin-arm64": ["@docslib/cli-darwin-arm64@0.1.0", "", { "os": "darwin", "cpu": "arm64" }, "sha512-fY9q1Y9JjYBYhAyIpOJKtj50xVDdlmrTlw7ljX+ejx1DH9DKQdZzgf+GmfKyazUrbfz1fX8W+rilooy7sj+fCw=="],
-
-    "@docslib/cli-darwin-x64": ["@docslib/cli-darwin-x64@0.1.0", "", { "os": "darwin", "cpu": "x64" }, "sha512-CgI87aJmyyg7YkkmOWAt1h3tdKqnzXJm1VEYJF7FGsXNIL+lMfBaA8KaX1+JKw02l1vg09TCvcOCDUaVZVGG6A=="],
-
-    "@docslib/cli-linux-arm64": ["@docslib/cli-linux-arm64@0.1.0", "", { "os": "linux", "cpu": "arm64" }, "sha512-amIK/f39RAj37tmMZOYW+rLaXo4umV7EoP/gQw79iNC+BqMiBMvp6gY4IrnpXrZL9YP0nT74UyWBZVS3epeClA=="],
-
-    "@docslib/cli-linux-x64": ["@docslib/cli-linux-x64@0.1.0", "", { "os": "linux", "cpu": "x64" }, "sha512-GFw5cYnk7OMBzBbgwW1+//C3U0TDZQ3M7mWUWilXsc3JWnVkEDDRPJ01cgQzXlcSCsfUgodJYqPq0k8B3i5zEw=="],
 
     "@docslib/core": ["@docslib/core@workspace:packages/core"],
 
