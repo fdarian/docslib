@@ -1,0 +1,13 @@
+{
+	"sources": [
+		{
+			"type": "website",
+			"url": "https://orm.drizzle.team/docs/overview",
+			"llmsTxtUrl": "https://orm.drizzle.team/llms.txt"
+		},
+		{
+			"type": "repository",
+			"url": "https://github.com/drizzle-team/drizzle-orm"
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"sources": [
+		{
+			"type": "website",
+			"url": "https://effect.website/docs",
+			"llmsTxtUrl": "https://effect.website/llms.txt"
+		},
+		{ "type": "repository", "url": "https://github.com/Effect-TS" }
+	]
+}

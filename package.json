@@ -1,0 +1,9 @@
+{
+	"name": "docs-registry",
+	"workspaces": [
+		"packages/*"
+	],
+	"devDependencies": {
+		"@biomejs/biome": "^2.3.13"
+	}
+}
