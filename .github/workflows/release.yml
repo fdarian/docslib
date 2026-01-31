@@ -52,32 +52,32 @@ jobs:
           git clone https://x-access-token:${HOMEBREW_TAP_TOKEN}@github.com/fdarian/homebrew-tap.git /tmp/tap
           cd /tmp/tap
 
-          cat > Formula/docslib.rb << RUBY
-class Docslib < Formula
-  desc "CLI tool to query documentation registry"
-  homepage "https://github.com/fdarian/docslib"
-  version "${VERSION}"
-  license "MIT"
+          cat > Formula/docslib.rb <<RUBY
+          class Docslib < Formula
+            desc "CLI tool to query documentation registry"
+            homepage "https://github.com/fdarian/docslib"
+            version "${VERSION}"
+            license "MIT"
 
-  on_arm do
-    url "https://github.com/fdarian/docslib/releases/download/docslib%40${VERSION}/docslib-darwin-arm64.tar.gz"
-    sha256 "${SHA_ARM64}"
-  end
+            on_arm do
+              url "https://github.com/fdarian/docslib/releases/download/docslib%40${VERSION}/docslib-darwin-arm64.tar.gz"
+              sha256 "${SHA_ARM64}"
+            end
 
-  on_intel do
-    url "https://github.com/fdarian/docslib/releases/download/docslib%40${VERSION}/docslib-darwin-x64.tar.gz"
-    sha256 "${SHA_X64}"
-  end
+            on_intel do
+              url "https://github.com/fdarian/docslib/releases/download/docslib%40${VERSION}/docslib-darwin-x64.tar.gz"
+              sha256 "${SHA_X64}"
+            end
 
-  def install
-    bin.install Dir["*"].first => "docslib"
-  end
+            def install
+              bin.install Dir["*"].first => "docslib"
+            end
 
-  test do
-    system "#{bin}/docslib", "--help"
-  end
-end
-RUBY
+            test do
+              system "#{bin}/docslib", "--help"
+            end
+          end
+          RUBY
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
