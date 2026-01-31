@@ -7,8 +7,9 @@
 
 ## Structure
 
-- `packages/core` — Effect Schema definitions for registry entries (`RegistryEntry`, `Source`, etc.) and JSON Schema generation script
+- `packages/core` — Effect Schema definitions for registry entries (`RegistryEntry`, `Source`, etc.), registry source logic (GitHub/local), and JSON Schema generation script
 - `apps/cli` — CLI tool to query the registry. Uses `@effect/cli`. Supports local filesystem and GitHub raw URL as registry sources
+- `apps/mcp` — MCP stdio server exposing a `get-docs` tool for AI agents to query the registry
 - `registry/` — JSON files storing documentation sources, organized as `registry/<type>/<name>.json`
 
 ## Bun
