@@ -1,7 +1,7 @@
-import { RegistryEntry } from "@docs-registry/core";
 import { HttpClient } from "@effect/platform";
 import { Effect, Layer, Schema } from "effect";
-import { RegistryNotFoundError, RegistrySource } from "#/registry-source.ts";
+import { RegistryEntry } from "#src/spec/schema.ts";
+import { RegistryNotFoundError, RegistrySource } from "#src/registry/source.ts";
 
 const BASE_URL =
 	"https://raw.githubusercontent.com/fdarian/docs-registry/refs/heads/main/registry";

@@ -1,9 +1,13 @@
 import { Args, Command, Options } from "@effect/cli";
 import { FetchHttpClient } from "@effect/platform";
 import { Console, Effect, Logger, LogLevel, Option } from "effect";
-import { RegistrySource } from "#/registry-source.ts";
-import { GitHubRegistrySourceLayer } from "#/registry-source-github.ts";
-import { LocalRegistrySourceLayer } from "#/registry-source-local.ts";
+import {
+	RegistrySource,
+	GitHubRegistrySourceLayer,
+	LocalRegistrySourceLayer,
+} from "@docs-registry/core";
+
+const registryDir = new URL("../../../../registry", import.meta.url).pathname;
 
 const query = Args.text({ name: "query" });
 const type = Options.optional(
@@ -35,7 +39,7 @@ export const docsCmd = Command.make(
 		);
 
 		return args.source === "file"
-			? base.pipe(Effect.provide(LocalRegistrySourceLayer))
+			? base.pipe(Effect.provide(LocalRegistrySourceLayer(registryDir)))
 			: base.pipe(
 					Effect.provide(GitHubRegistrySourceLayer),
 					Effect.provide(FetchHttpClient.layer),

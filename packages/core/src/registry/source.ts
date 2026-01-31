@@ -1,5 +1,5 @@
-import type { RegistryEntry } from "@docs-registry/core";
 import { Context, type Effect, Schema } from "effect";
+import type { RegistryEntry } from "#src/spec/schema.ts";
 
 export class RegistryNotFoundError extends Schema.TaggedError<RegistryNotFoundError>()(
 	"RegistryNotFoundError",

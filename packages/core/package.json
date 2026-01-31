@@ -2,9 +2,13 @@
 	"name": "@docs-registry/core",
 	"type": "module",
 	"exports": {
-		".": "./src/spec/schema.ts"
+		".": "./exports/index.ts"
+	},
+	"imports": {
+		"#src/*": "./src/*"
 	},
 	"dependencies": {
+		"@effect/platform": "^0.94.2",
 		"effect": "^3.19.15"
 	},
 	"devDependencies": {

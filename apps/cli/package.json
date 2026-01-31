@@ -7,6 +7,9 @@
 	"bin": {
 		"docs": "./dist/cli"
 	},
+	"imports": {
+		"#src/*": "./src/*"
+	},
 	"dependencies": {
 		"@docs-registry/core": "workspace:*",
 		"@effect/cli": "^0.73.1",
