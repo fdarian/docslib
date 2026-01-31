@@ -1,8 +1,12 @@
 {
 	"name": "@docs-registry/mcp",
 	"type": "module",
+	"bin": {
+		"@docs-registry/mcp": "./dist/mcp"
+	},
 	"scripts": {
-		"check:tsc": "tsgo --noEmit"
+		"check:tsc": "tsgo --noEmit",
+		"build": "bun build --compile entries/mcp.ts --outfile dist/mcp"
 	},
 	"dependencies": {
 		"@docs-registry/core": "workspace:*",

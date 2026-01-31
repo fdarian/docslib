@@ -9,10 +9,10 @@ This project maintains a **Registry** of documentation sources. Each **Entry** i
 
 ### Finding an Entry
 
-Identify the library (e.g. from `import {} from 'effect'`, `package.json` dependencies, or user mention), then read the corresponding Entry:
+Identify the library (e.g. from `import {} from 'effect'`, `package.json` dependencies, or user mention), then call the `get-docs` MCP tool:
 
-- npm packages: `registry/npm/[name].json`
-- Other: `registry/name/[name].json`
+- `query`: the library name (e.g. `effect`, `react`)
+- `type` (optional): the registry type (e.g. `npm`, `name`)
 
 ### Entry Structure
 
