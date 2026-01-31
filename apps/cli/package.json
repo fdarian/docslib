@@ -1,6 +1,6 @@
 {
 	"name": "@docslib/cli",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"type": "module",
 	"bin": {
 		"docslib": "./bin.mjs"
@@ -28,9 +28,9 @@
 		"typescript": "latest"
 	},
 	"optionalDependencies": {
-		"@docslib/cli-darwin-arm64": "0.1.0",
-		"@docslib/cli-darwin-x64": "0.1.0",
-		"@docslib/cli-linux-x64": "0.1.0",
-		"@docslib/cli-linux-arm64": "0.1.0"
+		"@docslib/cli-darwin-arm64": "0.1.1",
+		"@docslib/cli-darwin-x64": "0.1.1",
+		"@docslib/cli-linux-x64": "0.1.1",
+		"@docslib/cli-linux-arm64": "0.1.1"
 	}
 }
