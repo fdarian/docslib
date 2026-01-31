@@ -2,7 +2,7 @@
 	"name": "@docs-registry/cli",
 	"type": "module",
 	"scripts": {
-		"build": "bun build entries/main.ts --compile --outfile dist/cli"
+		"build": "bun build entries/cli.ts --compile --outfile dist/cli"
 	},
 	"bin": {
 		"docs": "./dist/cli"
