@@ -16,7 +16,7 @@ for (const app of apps) {
 
 		const publishProc = Bun.spawn(["npm", "publish", "--access", "public"], {
 			cwd: packageDir,
-			stdio: "inherit",
+			stdio: ["inherit", "inherit", "inherit"],
 		})
 
 		const exitCode = await publishProc.exited
@@ -30,7 +30,7 @@ for (const app of apps) {
 
 const changesetProc = Bun.spawn(["bunx", "changeset", "publish"], {
 	cwd: repoRoot,
-	stdio: "inherit",
+	stdio: ["inherit", "inherit", "inherit"],
 })
 
 const changesetExit = await changesetProc.exited
