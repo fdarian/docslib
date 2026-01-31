@@ -1,6 +1,9 @@
 {
 	"name": "@docs-registry/mcp",
 	"type": "module",
+	"scripts": {
+		"check:tsc": "tsgo --noEmit"
+	},
 	"dependencies": {
 		"@docs-registry/core": "workspace:*",
 		"@effect/platform": "^0.94.2",
@@ -10,6 +13,7 @@
 	},
 	"devDependencies": {
 		"@types/bun": "latest",
+		"@typescript/native-preview": "^7.0.0-dev.20260130.1",
 		"typescript": "latest"
 	}
 }
