@@ -1,0 +1,14 @@
+{
+	"name": "@docs-registry/core",
+	"type": "module",
+	"exports": {
+		".": "./src/spec/schema.ts"
+	},
+	"dependencies": {
+		"effect": "^3.19.15"
+	},
+	"devDependencies": {
+		"@types/bun": "latest",
+		"typescript": "latest"
+	}
+}
