@@ -1,14 +1,10 @@
 {
 	"name": "@docs-registry/internals",
 	"type": "module",
-	"bin": {
-		"docs-in": "./dist/docs-in"
-	},
 	"imports": {
 		"#src/*": "./src/*"
 	},
 	"scripts": {
-		"build": "bun build entries/cli.ts --compile --outfile dist/docs-in",
 		"check:tsc": "tsgo --noEmit"
 	},
 	"dependencies": {
