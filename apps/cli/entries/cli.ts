@@ -5,7 +5,7 @@ import { docsCmd } from "#src/commands/index.ts";
 import pkg from "../package.json" with { type: "json" };
 
 export const cli = Command.run(docsCmd, {
-	name: "docs",
+	name: "docslib",
 	version: pkg.version,
 });
 

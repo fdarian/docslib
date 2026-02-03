@@ -23,7 +23,7 @@ const source = Options.choice("source", ["base", "file"]).pipe(
 );
 
 export const docsCmd = Command.make(
-	"docs",
+	"docslib",
 	{ query, type, verbose, source },
 	(args) => {
 		const base = Effect.gen(function* () {
