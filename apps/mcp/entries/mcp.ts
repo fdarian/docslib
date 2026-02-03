@@ -8,7 +8,7 @@ import * as BunContext from '@effect/platform-bun/BunContext'
 import * as BunRuntime from '@effect/platform-bun/BunRuntime'
 
 export const cli = Command.run(
-	Command.make("mcp").pipe(
+	Command.make("docslib-mcp").pipe(
 		Command.withSubcommands([
 			Command.make("start", {}, () =>
 				Effect.gen(function* () {
@@ -20,7 +20,7 @@ export const cli = Command.run(
 		]),
 	),
 	{
-		name: "mcp",
+		name: "docslib-mcp",
 		version: "0.0.0",
 	},
 );
