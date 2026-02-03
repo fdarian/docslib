@@ -1,5 +1,5 @@
 import { join } from "path"
-import { mkdirSync } from "fs"
+import { mkdirSync, chmodSync } from "fs"
 
 const repoRoot = join(import.meta.dir, "..")
 
@@ -64,5 +64,7 @@ for (const [os, arch] of platforms) {
 		JSON.stringify(platformPackageJson, null, "\t") + "\n"
 	)
 
-	await Bun.write(join(platformPackageDir, "bin"), Bun.file(outfile))
+	const binPath = join(platformPackageDir, "bin")
+	await Bun.write(binPath, Bun.file(outfile))
+	chmodSync(binPath, 0o755)
 }
