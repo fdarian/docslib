@@ -6,6 +6,7 @@ import { Effect } from "effect";
 import { createServer } from "../src/server.ts";
 import * as BunContext from '@effect/platform-bun/BunContext'
 import * as BunRuntime from '@effect/platform-bun/BunRuntime'
+import pkg from "../package.json" with { type: "json" };
 
 export const cli = Command.run(
 	Command.make("docslib-mcp").pipe(
@@ -21,7 +22,7 @@ export const cli = Command.run(
 	),
 	{
 		name: "docslib-mcp",
-		version: "0.0.0",
+		version: pkg.version,
 	},
 );
 

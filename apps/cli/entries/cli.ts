@@ -2,10 +2,11 @@ import { Command } from "@effect/cli";
 import { BunContext, BunRuntime } from "@effect/platform-bun";
 import { Effect } from "effect";
 import { docsCmd } from "#src/commands/index.ts";
+import pkg from "../package.json" with { type: "json" };
 
 export const cli = Command.run(docsCmd, {
 	name: "docs",
-	version: "0.0.0",
+	version: pkg.version,
 });
 
 cli(process.argv).pipe(
