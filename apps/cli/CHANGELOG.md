@@ -1,5 +1,12 @@
 # @docslib/cli
 
+## 0.2.2
+
+### Patch Changes
+
+- 6b8d2fc: Fix double-execution when native binary exits with non-zero status code
+- 0e5f9e2: Fix version and name mismatch
+
 ## 0.2.1
 
 ### Patch Changes

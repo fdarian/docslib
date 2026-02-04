@@ -1,5 +1,11 @@
 # @docslib/mcp
 
+## 0.2.2
+
+### Patch Changes
+
+- 0e5f9e2: Fix version and name mismatch
+
 ## 0.2.1
 
 ### Patch Changes
